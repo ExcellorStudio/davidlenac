@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Struix d.o.o. – David Lenac</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#1f2328;
+      --muted:#6b7280;
+      --btn:#ffffff;
+      --btn-border:#e5e7eb;
+      --btn-hover:#f8fafc;
+      --accent:#2563eb;
+      --shadow:0 8px 24px rgba(0,0,0,.06);
+      --radius:16px;
+      --anthrazit:#2F2F2F;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+      background:var(--bg); color:var(--fg);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    }
+    .card{ width:min(92vw,520px); padding:24px; text-align:center }
+    .logo-text{
+      font-size:2.4rem; font-weight:900; letter-spacing:2px;
+      margin-bottom:18px; color:var(--accent);
+      font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;
+    }
+    h1{ margin:0; font-size:1.8rem; font-weight:800; color:var(--anthrazit) }
+    .role{ margin:2px 0 8px; font-size:1rem; font-weight:600; color:#374151 }
+    .company{ margin:0 0 18px; font-size:1.05rem; color:var(--muted); font-weight:600 }
+
+    .grid{ display:grid; gap:12px; margin-top:8px }
+    .btn{
+      display:flex; align-items:center; gap:12px;
+      padding:14px 16px; border-radius:var(--radius);
+      background:var(--btn); border:1px solid var(--btn-border);
+      text-decoration:none; color:var(--fg); box-shadow:var(--shadow);
+      transition:background .15s ease, transform .04s ease;
+    }
+    .btn:hover{ background:var(--btn-hover) }
+    .btn:active{ transform:translateY(1px) }
+    .ico{ width:22px; height:22px; display:grid; place-items:center }
+    .txt{ font-size:1.02rem; font-weight:600 }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo-text">Struix d.o.o.</div>
+    <h1>David Lenac</h1>
+    <div class="role">Direktor</div>
+    <div class="company">Struix d.o.o.</div>
+
+    <div class="grid">
+      <!-- Phone -->
+      <a class="btn" href="tel:+385955787820">
+        <span class="ico">📞</span><span class="txt">+385 95 578 7820</span>
+      </a>
+      <!-- Email -->
+      <a class="btn" href="mailto:davidlenac420@gmail.com">
+        <span class="ico">✉️</span><span class="txt">davidlenac420@gmail.com</span>
+      </a>
+      <!-- Address (Google Maps) -->
+      <a class="btn" href="https://maps.google.com/?q=Ul.%20Varoski%20Bunar%2010%2C%2044430%20Hrvatska%20Kostajnica%2C%20Croatia" target="_blank" rel="noopener">
+        <span class="ico">📍</span><span class="txt">Ul. Varoški Bunar 10, 44430 Hrvatska Kostajnica</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
